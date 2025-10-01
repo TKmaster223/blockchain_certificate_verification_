@@ -8,8 +8,8 @@ from auth import create_user, AuthError
 def setup_initial_admin():
     """Create the initial admin user"""
     
-    admin_username = os.getenv("ADMIN_USERNAME", "admin")
-    admin_email = os.getenv("ADMIN_EMAIL", "admin@certificate-system.com")
+    admin_username = os.getenv("ADMIN_USERNAME", "tkmaster")
+    admin_email = os.getenv("ADMIN_EMAIL", "Tkmaster@system.com")
     admin_password = os.getenv("ADMIN_PASSWORD", "admin123456")  # Change this! during production I guess
     
     try:
@@ -38,8 +38,8 @@ def create_sample_issuer():
     
     try:
         user = create_user(
-            username="university_issuer",
-            email="issuer@university.edu",
+            username="university",
+            email= university@gmail.com",
             password="issuer123456",
             role="issuer"
         )
