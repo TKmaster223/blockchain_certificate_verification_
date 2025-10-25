@@ -39,7 +39,7 @@ def create_sample_issuer():
     try:
         user = create_user(
             username="university",
-            email= university@gmail.com",
+            email="university@gmail.com",
             password="issuer123456",
             role="issuer"
         )

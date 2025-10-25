@@ -61,11 +61,20 @@ A secure, blockchain-powered certificate verification system with JWT authentica
 
 1. **Clone the repository**
    ```bash
-   git clone <https://github.com/TKmaster223/blockchain_certificate_verification_.git>
-   cd cert-verification
+   git clone https://github.com/TKmaster223/blockchain_certificate_verification_.git
+   cd blockchain_certificate_verification_
    ```
 
-2. **Start all services**
+2. **Configure environment variables (optional)**
+   ```bash
+   # Copy the example environment file
+   cp .env.example .env
+   
+   # Edit .env with your configuration (optional for local development)
+   # The defaults work fine for local testing
+   ```
+
+3. **Start all services**
    ```bash
    # Windows
    .\start.ps1
@@ -74,10 +83,11 @@ A secure, blockchain-powered certificate verification system with JWT authentica
    ./start.sh
    ```
 
-3. **Access the application**
+4. **Access the application**
    - API Documentation: http://localhost:8000/docs
    - API Base URL: http://localhost:8000
    - Frontend: http://localhost:3000 (if running)
+
 
 ## 🔧 Manual Setup
 
