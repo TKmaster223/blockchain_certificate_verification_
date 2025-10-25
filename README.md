@@ -61,7 +61,7 @@ A secure, blockchain-powered certificate verification system with JWT authentica
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone <https://github.com/TKmaster223/blockchain_certificate_verification_.git>
    cd cert-verification
    ```
 
