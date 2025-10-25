@@ -84,10 +84,14 @@ yarn-error.log*
 frontend/dist/
 frontend/build/
 
-# Environment variables (keep template, ignore actual)
+# Environment variables (keep .env.example template, ignore actual .env files)
+.env
 .env.local
 .env.production
 .env.development
+.env.test
+!.env.example
+
 
 # Logs
 *.log
@@ -100,7 +104,9 @@ logs/
 
 # Blockchain
 *.keystore
-*.json
+# Blockchain keystore files (not package.json or config files)
+build/contracts/*.json
+!build/contracts/*_metadata.json
 
 # Dependencies
 backend/deps/
